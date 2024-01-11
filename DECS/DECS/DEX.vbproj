@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5FE9C055-D782-4E13-8F86-6BDBFE30AFA4}</ProjectGuid>
+    <ProjectGuid>{8F40FD94-23B7-4640-80AC-6FB0E05296DE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Menus.My.MyApplication</StartupObject>
-    <RootNamespace>Menus</RootNamespace>
-    <AssemblyName>Menus</AssemblyName>
+    <StartupObject>DECS.My.MyApplication</StartupObject>
+    <RootNamespace>DECS</RootNamespace>
+    <AssemblyName>DECS</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Menus.xml</DocumentationFile>
+    <DocumentationFile>DECS.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Menus.xml</DocumentationFile>
+    <DocumentationFile>DECS.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
