@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Field1 = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Field2 = New System.Windows.Forms.TextBox()
@@ -43,10 +44,12 @@ Partial Class Form1
         Me.Field1.Name = "Field1"
         Me.Field1.Size = New System.Drawing.Size(100, 22)
         Me.Field1.TabIndex = 0
+        Me.Field1.Text = "Belle"
         '
         'PictureBox1
         '
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(405, 54)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(301, 317)
@@ -60,6 +63,7 @@ Partial Class Form1
         Me.Field2.Name = "Field2"
         Me.Field2.Size = New System.Drawing.Size(100, 22)
         Me.Field2.TabIndex = 2
+        Me.Field2.Text = "1991"
         '
         'Field3
         '
@@ -67,6 +71,7 @@ Partial Class Form1
         Me.Field3.Name = "Field3"
         Me.Field3.Size = New System.Drawing.Size(100, 22)
         Me.Field3.TabIndex = 3
+        Me.Field3.Text = "Disney"
         '
         'Field4
         '
@@ -74,13 +79,15 @@ Partial Class Form1
         Me.Field4.Name = "Field4"
         Me.Field4.Size = New System.Drawing.Size(100, 22)
         Me.Field4.TabIndex = 4
+        Me.Field4.Text = "Princess"
         '
         'Field5
         '
         Me.Field5.Location = New System.Drawing.Point(12, 346)
         Me.Field5.Name = "Field5"
-        Me.Field5.Size = New System.Drawing.Size(100, 22)
+        Me.Field5.Size = New System.Drawing.Size(149, 22)
         Me.Field5.TabIndex = 5
+        Me.Field5.Text = "5th Princess"
         '
         'MenuStrip1
         '
