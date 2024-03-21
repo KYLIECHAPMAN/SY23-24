@@ -1,4 +1,6 @@
-﻿Public Class CoinSlot
+﻿Imports System.Net.Security
+
+Public Class CoinSlotvb
     Public Event dispense(p As Image)
     Public Event CoinReturnEvent(d As Integer, q As Integer, dm As Integer, n As Integer)
     Public Property Quarters As Integer
@@ -31,15 +33,13 @@
     Public Sub insertDollars()
         Dollars = Dollars + 1
     End Sub
-    Public Sub buy(p As ProductControl1)
-        If p.Count > 0 And total >= p.Price Then
-            p.Buy()
-            _total = total - p.Price
+    Public Sub spin()
+        If total >= 1 Then
+            _total = total - 1
             Dollars = 0
             Quarters = 0
             Dimes = 0
             Nickles = _total / 0.05
-            RaiseEvent dispense(p.Picture)
         End If
     End Sub
 End Class
